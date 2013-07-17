@@ -914,7 +914,6 @@ static NSString * const SWSegueRightIdentifier = @"sw_right";
     __weak SWRevealViewController *theSelf = self;
     if ( animated )
     {
-        _enqueue( [theSelf _setFrontViewPosition:FrontViewPositionRightMost withDuration:firstDuration] );
         _enqueue( [theSelf _setFrontViewController:newFrontViewController] );
         _enqueue( [theSelf _setFrontViewPosition:FrontViewPositionLeft withDuration:duration] );
     }
